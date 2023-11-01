@@ -1,0 +1,106 @@
+.hero-section {
+  display: flex;
+  width: 60%;
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.hero-left > h1 {
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: #125c86;
+}
+
+.hero-left > p {
+  font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
+  color: #0f0d1f;
+  line-height: 1.5;
+}
+
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-right > img {
+  width: 350px;
+}
+
+@media (max-width: 1300px) {
+  .hero-right > img {
+    width: 300px;
+  }
+
+  .hero-left > h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-left > p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .hero-section {
+    width: 70%;
+  }
+
+  .hero-right > img {
+    width: 280px;
+  }
+
+  .hero-left > h1 {
+    font-size: 2.35rem;
+  }
+
+  .hero-left > p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .hero-section {
+    width: 70%;
+  }
+
+  .hero-right > img {
+    width: 250px;
+  }
+
+  .hero-left > h1 {
+    font-size: 2.15rem;
+  }
+
+  .hero-left > p {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .hero-right > img {
+    width: 250px;
+  }
+
+  .hero-left > h1 {
+    font-size: 2.15rem;
+  }
+
+  .hero-left > p {
+    font-size: 0.9em;
+  }
+}
