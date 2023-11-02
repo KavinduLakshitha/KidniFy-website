@@ -206,20 +206,21 @@
   .domain-container {
     width: 90%;
     height: auto;
+    height: 600px;
   }
 
   .tab-box .tab-btn {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     width: 100%;
     padding: 0.4rem;
   }
 
   .line {
-    top: 34px;
+    top: 40px;
   }
 
   .domain-content .content p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     line-height: 1.5;
   }
 }
