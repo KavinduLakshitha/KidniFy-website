@@ -228,7 +228,7 @@ section {
     color: #3d8cbf;
     position: fixed;
     background-color: white;
-    z-index: 1000;
+    z-index: 100;
   }
 
   #close-icon {
