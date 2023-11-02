@@ -227,6 +227,7 @@ section {
     margin-top: 0.5rem;
     color: #3d8cbf;
     position: fixed;
+    background-color: white;
   }
 
   #close-icon {
