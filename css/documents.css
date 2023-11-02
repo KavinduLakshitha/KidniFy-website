@@ -91,6 +91,12 @@
   margin-right: 0.5rem;
 }
 
+@media (max-width: 1400px) {
+  #documents {
+    scroll-margin-block-start: 12rem;
+  }
+}
+
 @media (max-width: 1285px) {
   #documents {
     scroll-margin-block-start: 12rem;
