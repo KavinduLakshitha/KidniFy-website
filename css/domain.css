@@ -209,7 +209,7 @@
   }
 
   .tab-box .tab-btn {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     width: 100%;
     padding: 0.4rem;
   }
@@ -219,7 +219,7 @@
   }
 
   .domain-content .content p {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     line-height: 1.5;
   }
 }
