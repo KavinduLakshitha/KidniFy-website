@@ -1,0 +1,275 @@
+#team {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  scroll-margin-block-start: 12rem;
+}
+
+#team > h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: #125c86;
+  font-size: 2.5rem;
+  align-self: center;
+  margin-bottom: 2rem;
+}
+
+.team-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-supervisors,
+.team-members {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-content {
+  background-color: white;
+  padding: 0.75rem;
+  box-shadow: rgba(18, 92, 134, 0.2) 0px 7px 29px 0px;
+}
+
+.team-photo {
+  object-fit: contain;
+  width: 250px;
+}
+
+.team-name {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #125c86;
+  font-size: 1.15rem;
+  margin: 0.95rem 0;
+  text-align: center;
+}
+
+.team-position {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #0f0d1f;
+  font-size: 1rem;
+  margin: 0.95rem 0;
+  text-align: center;
+}
+
+.team-sociallinks {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0.95rem 0;
+}
+
+.team-sociallinks > a {
+  color: #125c86;
+  font-size: 1.25rem;
+}
+
+.team-sociallinks > a:hover {
+  color: #3d8cbf;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 1200px) {
+  #team {
+    scroll-margin-block-start: 23rem;
+  }
+  .team-container {
+    margin-top: 1.5rem;
+  }
+
+  .team-photo {
+    width: 250px;
+  }
+
+  #team > h1 {
+    font-size: 2rem;
+    align-self: center;
+  }
+
+  .team-name {
+    font-size: 0.95rem;
+  }
+
+  .team-position {
+    font-size: 0.85rem;
+  }
+
+  .team-sociallinks > a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  #team {
+    scroll-margin-block-start: 19rem;
+  }
+  .team-container {
+    margin-top: 1.5rem;
+  }
+
+  .team-photo {
+    width: 230px;
+  }
+
+  #team > h1 {
+    font-size: 1.8rem;
+  }
+
+  .team-name {
+    font-size: 0.85rem;
+  }
+
+  .team-position {
+    font-size: 0.8rem;
+  }
+
+  .team-sociallinks > a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #team {
+    scroll-margin-block-start: 6.5rem;
+  }
+
+  .team-container {
+    gap: 0.6rem;
+    margin-top: 1.5rem;
+  }
+
+  .team-supervisors,
+  .team-members {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+  }
+
+  .team-content {
+    padding: 0.5rem;
+  }
+
+  .team-photo {
+    width: 180px;
+  }
+
+  .team-name {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .team-position {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+  }
+
+  .team-sociallinks > a {
+    font-size: 0.85rem;
+    margin: 0;
+  }
+}
+
+@media (max-width: 674px) {
+  #team {
+    scroll-margin-block-start: 4rem;
+  }
+
+  .team-content {
+    padding: 0.5rem;
+    margin-top: 1.2rem;
+  }
+
+  .team-photo {
+    width: 150px;
+  }
+
+  .team-name {
+    font-size: 0.8rem;
+  }
+
+  .team-position {
+    font-size: 0.75rem;
+  }
+
+  .team-sociallinks > a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 580px) {
+  #team {
+    scroll-margin-block-start: 2rem;
+  }
+
+  .team-content {
+    padding: 0.5rem;
+  }
+
+  .team-photo {
+    width: 130px;
+  }
+
+  .team-name {
+    font-size: 0.75rem;
+  }
+
+  .team-position {
+    font-size: 0.7rem;
+  }
+
+  .team-sociallinks > a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 508px) {
+  #team {
+    scroll-margin-block-start: 6rem;
+  }
+
+  .team-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+  }
+
+  .team-content {
+    padding: 0.5rem;
+  }
+
+  .team-photo {
+    width: 180px;
+  }
+
+  .team-name {
+    font-size: 0.75rem;
+  }
+
+  .team-position {
+    font-size: 0.7rem;
+  }
+
+  .team-sociallinks > a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 445px) {
+  #team {
+    scroll-margin-block-start: 40rem;
+  }
+
+  .team-photo {
+    width: 200px;
+  }
+}

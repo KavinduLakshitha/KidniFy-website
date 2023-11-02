@@ -1,0 +1,218 @@
+#domain {
+  display: flex;
+  flex-direction: column;
+  scroll-margin-block-start: 3rem;
+}
+
+#domain > h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: #125c86;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.domain-container {
+  width: 850px;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 1px 0 4px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  height: 500px;
+}
+
+.tab-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e0e0e0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+}
+
+.tab-box .tab-btn {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3d8cbf;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 1.25rem;
+  width: 100%;
+  text-align: center;
+}
+
+.domain-content {
+  padding: 1.5rem;
+}
+
+.domain-content .content {
+  display: none;
+}
+
+.domain-content .content.active {
+  display: block;
+}
+
+.domain-content .content h1 {
+  margin-bottom: 0.85rem;
+}
+
+.domain-content .content p {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.99rem;
+  line-height: 2;
+}
+
+.line {
+  position: absolute;
+  margin-top: auto;
+  top: 58px;
+  left: 0;
+  width: 25%;
+  height: 3px;
+  background-color: #4fa1d0;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 1600px) {
+  #domain {
+    scroll-margin-block-start: 5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  #domain > h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .domain-container {
+    width: 90%;
+    height: 460px;
+  }
+
+  .tab-box .tab-btn {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .line {
+    top: 57px;
+  }
+
+  .domain-content .content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 832px) {
+  #domain > h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .domain-container {
+    width: 90%;
+    height: 550px;
+  }
+
+  .tab-box .tab-btn {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  .line {
+    top: 54px;
+  }
+
+  .domain-content .content p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #domain > h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .domain-container {
+    width: 90%;
+    height: 520px;
+  }
+
+  .tab-box .tab-btn {
+    font-size: 0.75rem;
+    width: 100%;
+    padding: 1.25rem;
+  }
+
+  .line {
+    top: 53px;
+  }
+}
+
+@media (max-width: 728px) {
+  .domain-container {
+    width: 90%;
+    height: 500px;
+  }
+
+  .tab-box .tab-btn {
+    font-size: 0.7rem;
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .line {
+    top: 30px;
+  }
+
+  .domain-content .content p {
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .domain-container {
+    width: 90%;
+    height: 510px;
+  }
+
+  .tab-box .tab-btn {
+    font-size: 0.6rem;
+    width: 100%;
+    padding: 0.4rem;
+  }
+
+  .line {
+    top: 25px;
+  }
+}
+
+@media (max-width: 463px) {
+  .domain-container {
+    width: 90%;
+    height: auto;
+  }
+
+  .tab-box .tab-btn {
+    font-size: 0.6rem;
+    width: 100%;
+    padding: 0.4rem;
+  }
+
+  .line {
+    top: 34px;
+  }
+
+  .domain-content .content p {
+    font-size: 0.6rem;
+  }
+}

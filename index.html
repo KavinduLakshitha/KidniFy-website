@@ -4,9 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KidniFy</title>
+
+    <!-- CSS Styling -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/domain.css" />
+    <link rel="stylesheet" href="./css/milestones.css" />
+    <link rel="stylesheet" href="./css/team.css" />
+    <link rel="stylesheet" href="./css/documents.css" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
@@ -15,7 +25,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/home.css" />
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -23,8 +34,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <script src="./script.js"></script>
   </head>
   <body>
     <nav>
@@ -32,7 +41,7 @@
         <img class="nav-logo" src="./images/KidniFyLogo.png" alt="" />
       </a>
       <div class="nav-links">
-        <a class="nav-link" href="#domain">Our Domain</a>
+        <a class="nav-link" href="#domain">Domain</a>
         <a class="nav-link" href="#milestones">Milestones</a>
         <a class="nav-link" href="#features">Features</a>
         <a class="nav-link" href="#documents">Documents</a>
@@ -62,10 +71,388 @@
         </div>
       </div>
     </section>
-    <section id="domain">This is domain page</section>
-    <section id="milestones">This is milestones page</section>
+    <section id="domain">
+      <h1>Our domain</h1>
+      <div class="domain-container">
+        <div class="tab-box">
+          <button class="tab-btn active">Background</button
+          ><button class="tab-btn">Research Gap</button
+          ><button class="tab-btn">Research Problem</button
+          ><button class="tab-btn">Goals</button>
+          <div class="line"></div>
+        </div>
+
+        <div class="domain-content">
+          <div class="content active">
+            <p>
+              Introducing a groundbreaking initiative in Sri Lanka to combat
+              Chronic Kidney Disease (CKD) with the power of technology. We are
+              developing a user-friendly smartphone application that employs
+              cutting-edge Machine Learning (ML) algorithms for accurate CKD
+              prediction. With 16% of the population affected, early detection
+              is vital, and this app aims to be a game-changer. Patients can
+              estimate their CKD risk, while healthcare professionals can
+              utilize it for early detection and personalized treatment plans.
+              By integrating patient-specific data and advanced ML algorithms,
+              we're boosting prediction accuracy and transforming CKD
+              management. But our impact doesn't stop there. CKD in Sri Lanka is
+              influenced by various factors, including water contamination.
+              We're also pioneering IoT and ML technologies to continuously
+              monitor water quality, providing real-time alerts to kidney
+              patients. This innovation ensures safer water, proactive measures,
+              and empowers rural areas. Together, these innovations promise to
+              revolutionize CKD prediction, management, and water quality
+              monitoring, contributing to a healthier Sri Lankan population.
+            </p>
+          </div>
+          <div class="content">
+            <p>
+              This research project addressed crucial gaps in the prediction and
+              management of Chronic Kidney Disease (CKD) in Sri Lanka. It
+              identified limitations in existing machine learning applications
+              for CKD prediction, with a focus on improving accuracy,
+              accessibility, and localization. The study also advocated for the
+              use of advanced technology in medical imaging, such as
+              Convolutional Neural Networks (CNNs) and multimodal image fusion,
+              to enhance CKD diagnosis and monitoring. Additionally, the
+              research introduced a novel approach to CKD dietary management
+              using a Random Forest Regressor model, considering multiple
+              dietary attributes for personalized diet plans. Furthermore, the
+              study identified significant research gaps in water quality
+              monitoring systems, emphasizing the need for specialized solutions
+              tailored to CKD patients. Integrating IoT and machine learning
+              into water quality monitoring was explored to enhance accuracy and
+              efficiency, along with improving data accessibility and timely
+              detection of water quality issues.
+            </p>
+          </div>
+          <div class="content">
+            <p>
+              In Sri Lanka, Chronic Kidney Disease (CKD) is a prevalent health
+              concern, affecting roughly 17.7% of the population. Early
+              detection and intervention are essential, but significant
+              challenges persist. Limited access to diagnostic tools,
+              particularly in rural areas, results in delayed diagnoses and
+              healthcare disparities. To address these issues, the research
+              explored the potential of machine learning (ML) models for CKD
+              prediction within the unique Sri Lankan context. It investigated
+              various factors influencing model performance, aiming to develop
+              more effective predictive tools. The study also assessed public
+              awareness of CKD risks and symptoms to enhance early detection and
+              treatment. It identified barriers to accessing diagnostic tools
+              and proposed strategies for broader access and improved CKD
+              management. Additionally, the research acknowledged the complexity
+              of kidney disease diagnosis, leading to the development of a
+              mobile app providing personalized dietary advice to CKD patients,
+              facilitating adherence to dietary restrictions. Another critical
+              aspect of the research was the absence of a reliable real-time
+              water quality monitoring system in Sri Lanka, which particularly
+              affects kidney patients.
+            </p>
+          </div>
+          <div class="content">
+            <p>
+              The objectives of this initiative include developing a robust and
+              effective mobile application to predict a user's kidney health
+              condition, selecting and optimizing an image classification model
+              for accurate CKD stage prediction from CT scans, creating a
+              patient-specific care recommendation system, devising a
+              personalized diet plan for CKD patients based on medical history
+              and real-time health indicators, and implementing an Internet of
+              Things and Machine Learning-based water quality monitoring system
+              tailored to kidney patients' needs. The central aim is to enhance
+              the well-being of kidney patients by minimizing the risks
+              associated with compromised water sources. This comprehensive
+              approach promises to set new standards for data-driven healthcare
+              and improve patient care in the region.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="milestones">
+      <!-- <div class="timeline">
+        <div class="timeline-container timeline-left">
+          <div class="timeline-content">
+            <h2>2017</h2>
+            <p>Lorem ipsum..</p>
+          </div>
+        </div>
+        <div class="timeline-container timeline-right">
+          <div class="timeline-content">
+            <h2>2016</h2>
+            <p>Lorem ipsum..</p>
+          </div>
+        </div>
+      </div> -->
+    </section>
     <section id="features">This is features page</section>
-    <section id="documents">This is documents page</section>
-    <section id="team">This is team page</section>
+    <section id="documents">
+      <div class="documents">
+        <h1>Documentation</h1>
+        <h2>Project Proposal</h2>
+
+        <div class="document-cards">
+          <div class="document-card">
+            <div>
+              <h3>Proposal Presentation</h3>
+              <i class="fa-solid fa-file-powerpoint"></i>
+              <div class="document-btn">
+                <i class="fa-solid fa-download"></i><button>Download</button>
+              </div>
+            </div>
+          </div>
+          <div class="document-card">
+            <div>
+              <h3>Proposal Document - Group</h3>
+              <i class="fa-regular fa-file-pdf"></i>
+              <div class="document-btn">
+                <i class="fa-solid fa-download"></i><button>Download</button>
+              </div>
+            </div>
+          </div>
+          <div class="document-card">
+            <div>
+              <h3>Proposal Document - IT20154226</h3>
+              <i class="fa-regular fa-file-pdf"></i>
+              <div class="document-btn">
+                <i class="fa-solid fa-download"></i><button>Download</button>
+              </div>
+            </div>
+          </div>
+          <div class="document-card">
+            <div>
+              <h3>Proposal Document - IT20785192</h3>
+              <i class="fa-regular fa-file-pdf"></i>
+              <div class="document-btn">
+                <i class="fa-solid fa-download"></i><button>Download</button>
+              </div>
+            </div>
+          </div>
+          <div class="document-card">
+            <div>
+              <h3>Proposal Document - IT20226596</h3>
+              <i class="fa-regular fa-file-pdf"></i>
+              <div class="document-btn">
+                <i class="fa-solid fa-download"></i><button>Download</button>
+              </div>
+            </div>
+          </div>
+          <div class="document-card">
+            <div>
+              <h3>Proposal Document - IT20235260</h3>
+              <i class="fa-regular fa-file-pdf"></i>
+              <div class="document-btn">
+                <i class="fa-solid fa-download"></i><button>Download</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2>Status Document - 1</h2>
+
+        <div class="document-cards">
+          <div class="document-card">
+            <div>
+              <h3>Status Document - IT20154226</h3>
+              <i class="fa-solid fa-file-powerpoint"></i>
+              <div class="document-btn">
+                <i class="fa-solid fa-download"></i><button>Download</button>
+              </div>
+            </div>
+          </div>
+          <div class="document-card">
+            <div>
+              <h3>Status Document - IT20785192</h3>
+              <i class="fa-solid fa-file-powerpoint"></i>
+              <div class="document-btn">
+                <i class="fa-solid fa-download"></i><button>Download</button>
+              </div>
+            </div>
+          </div>
+          <div class="document-card">
+            <div>
+              <h3>Status Document - IT20226596</h3>
+              <i class="fa-solid fa-file-powerpoint"></i>
+              <div class="document-btn">
+                <i class="fa-solid fa-download"></i><button>Download</button>
+              </div>
+            </div>
+          </div>
+          <div class="document-card">
+            <div>
+              <h3>Status Document - IT20235260</h3>
+              <i class="fa-solid fa-file-powerpoint"></i>
+              <div class="document-btn">
+                <i class="fa-solid fa-download"></i><button>Download</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2>Progress Presentation - 1</h2>
+
+        <div class="document-cards">
+          <div class="document-card">
+            <div>
+              <h3>Proposal Presentation</h3>
+              <i class="fa-solid fa-file-powerpoint"></i>
+              <div class="document-btn">
+                <i class="fa-solid fa-download"></i><button>Download</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2>Research Paper</h2>
+
+        <div class="document-cards">
+          <div class="document-card">
+            <div>
+              <h3>Research Paper - Group</h3>
+              <i class="fa-solid fa-file-powerpoint"></i>
+              <div class="document-btn">
+                <i class="fa-solid fa-download"></i><button>Download</button>
+              </div>
+            </div>
+          </div>
+          <div class="document-card">
+            <div>
+              <h3>Research Paper - IT20154226</h3>
+              <i class="fa-solid fa-file-powerpoint"></i>
+              <div class="document-btn">
+                <i class="fa-solid fa-download"></i><button>Download</button>
+              </div>
+            </div>
+          </div>
+          <div class="document-card">
+            <div>
+              <h3>Research Paper - IT20785192</h3>
+              <i class="fa-solid fa-file-powerpoint"></i>
+              <div class="document-btn">
+                <i class="fa-solid fa-download"></i><button>Download</button>
+              </div>
+            </div>
+          </div>
+          <div class="document-card">
+            <div>
+              <h3>Research Paper - IT20226596</h3>
+              <i class="fa-solid fa-file-powerpoint"></i>
+              <div class="document-btn">
+                <i class="fa-solid fa-download"></i><button>Download</button>
+              </div>
+            </div>
+          </div>
+          <div class="document-card">
+            <div>
+              <h3>Research Paper - IT20235260</h3>
+              <i class="fa-solid fa-file-powerpoint"></i>
+              <div class="document-btn">
+                <i class="fa-solid fa-download"></i><button>Download</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2>Progress Presentation - 2</h2>
+
+        <h2>Final Reports</h2>
+      </div>
+    </section>
+    <section id="team">
+      <h1>Meet the team</h1>
+      <div class="team-container">
+        <div class="team-supervisors">
+          <div class="team-content">
+            <img class="team-photo" src="./images/MsWishalya.jpeg" alt="" />
+            <h1 class="team-name">Ms. Wishalya Tissera</h1>
+            <h4 class="team-position">Supervisor</h4>
+            <div class="team-sociallinks">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/wishalya-tissera/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a target="_blank" href="mailto:wishalya.t@sliit.lk"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+          <div class="team-content">
+            <img class="team-photo" src="./images/MrSamadhi.jpeg" alt="" />
+            <h1 class="team-name">Mr. Samadhi Rathnayake</h1>
+            <h4 class="team-position">Co-supervisor</h4>
+            <div class="team-sociallinks">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/samadhi-chathuranga-rathnayake/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a target="_blank" href="mailto:wishalya.t@sliit.lk"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="team-members">
+          <div class="team-content">
+            <img class="team-photo" src="./images/Kavindu.jpeg" alt="" />
+            <h1 class="team-name">Kavindu Marasinghe</h1>
+            <h4 class="team-position">Team Leader</h4>
+            <div class="team-sociallinks">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/kavindu-marasinghe/"
+                ><i class="fa-brands fa-linkedin"></i></a
+              ><a target="_blank" href="mailto:kavindu.m.online@gmail.com"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+          <div class="team-content">
+            <img class="team-photo" src="./images/Ashani.jpeg" alt="" />
+            <h1 class="team-name">Ashani Wijekoon</h1>
+            <h4 class="team-position">Team Member</h4>
+            <div class="team-sociallinks">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/ashani-wijekoon-899b331b8/"
+                ><i class="fa-brands fa-linkedin"></i></a
+              ><a target="_blank" href="mailto:wishalya.t@sliit.lk"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+          <div class="team-content">
+            <img class="team-photo" src="./images/Malith.png" alt="" />
+            <h1 class="team-name">Malith Perera</h1>
+            <h4 class="team-position">Team Member</h4>
+            <div class="team-sociallinks">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/mlakshperera/"
+                ><i class="fa-brands fa-linkedin"></i></a
+              ><a target="_blank" href="mailto:wishalya.t@sliit.lk"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+          <div class="team-content">
+            <img class="team-photo" src="./images/Nuwanthika.jpeg" alt="" />
+            <h1 class="team-name">Nuwanthika Samarawila</h1>
+            <h4 class="team-position">Team Member</h4>
+            <div class="team-sociallinks">
+              <a target="_blank" href="https://www.linkedin.com/in/nuwanthikas/"
+                ><i class="fa-brands fa-linkedin"></i></a
+              ><a target="_blank" href="mailto:wishalya.t@sliit.lk"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
   </body>
 </html>

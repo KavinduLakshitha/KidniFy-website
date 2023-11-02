@@ -3,23 +3,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeIcon = document.getElementById("close-icon");
   const nav = document.querySelector("nav");
 
-  // Function to open the navbar
   function openNav() {
     nav.style.transform = "translateX(0%)";
   }
 
-  // Function to close the navbar
   function closeNav() {
     nav.style.transform = "translateX(-100%)";
   }
 
-  // Add an event listener to open the navbar when the menu icon is clicked
   menuBars.addEventListener("click", openNav);
 
-  // Add an event listener to close the navbar when the close icon is clicked
   closeIcon.addEventListener("click", closeNav);
 
-  // Add an event listener to close the navbar when clicking outside of it
   document.addEventListener("click", function (event) {
     if (
       nav.style.transform === "translateX(0%)" &&
@@ -28,5 +23,27 @@ document.addEventListener("DOMContentLoaded", function () {
     ) {
       closeNav();
     }
+  });
+});
+
+const tabs = document.querySelectorAll(".tab-btn");
+const allContents = document.querySelectorAll(".content");
+const line = document.querySelector(".line"); // Select the line element
+
+tabs.forEach((tab, index) => {
+  tab.addEventListener("click", (e) => {
+    // Add the event parameter 'e'
+    tabs.forEach((tab) => {
+      tab.classList.remove("active");
+    });
+    tab.classList.add("active");
+
+    line.style.width = e.target.offsetWidth + "px";
+    line.style.left = e.target.offsetLeft + "px";
+
+    allContents.forEach((content) => {
+      content.classList.remove("active");
+    });
+    allContents[index].classList.add("active");
   });
 });
