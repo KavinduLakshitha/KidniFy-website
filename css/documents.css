@@ -1,11 +1,10 @@
-/* #documents {
-  height: 300vh;
+#documents {
+  scroll-margin-block-start: 4rem;
 }
 
-.documents {
-  display: flex;
-  flex-direction: column;
-  width: 85%;
+.accordion {
+  width: 1000px;
+  margin: 0 auto;
 }
 
 .documents > h1 {
@@ -13,103 +12,101 @@
   font-weight: 800;
   color: #125c86;
   font-size: 2.5rem;
+  align-self: center;
+  margin-bottom: 2rem;
   text-align: center;
-  margin-bottom: 2rem;
 }
 
-.documents > h2 {
+.accordion-title {
+  background-color: #75c6ef;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5rem;
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 1.25rem;
   color: #125c86;
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
 }
 
-.documents > h2:not(:nth-child(2)) {
-  margin-top: 1rem;
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  margin: 0.5rem 0;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 1000px;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+  opacity: 1;
 }
 
 .document-cards {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
+  gap: 0.5rem;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
 }
 
 .document-card {
-  background-color: white;
-  padding: 1rem;
-  border-radius: 1rem;
-  margin-bottom: 1rem;
   flex: 1;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border: #75c6ef 1px solid;
+  border-radius: 1rem;
+  padding: 0.5rem;
 }
 
-.document-card > div > h3 {
-  font-family: "Raleway", sans-serif;
+.document-card h3 {
+  font-size: 1.15rem;
   font-weight: 500;
   color: #125c86;
-  font-size: 1.15rem;
-  margin: 0.95rem 0;
-  text-align: center;
+  margin-bottom: 0.8rem;
 }
 
 .document-card > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 1rem;
 }
 
-.fa-file-powerpoint {
-  color: #d24726;
-  font-size: 5rem;
-  text-align: center;
-}
-
-.fa-file-pdf {
-  color: #e84c3d;
-  font-size: 5rem;
-  text-align: center;
-}
-
-.document-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-  gap: 0.65rem;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  border: 1px solid #125c86;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-.fa-download {
-  color: #125c86;
-  font-size: 1.25rem;
-}
-
-.document-btn > button {
-  font-family: "Raleway", sans-serif;
+.document-card > div > a {
+  padding: 0.8rem;
+  border-radius: 1rem;
   font-weight: 600;
-  color: #125c86;
-  border: none;
-  background: none;
+  border: #75c6ef 1px solid;
+}
+
+.document-card > div > a:hover {
+  background-color: #75c6ef80;
+  transition: all 0.5s ease-in-out;
+  scale: 1.1;
   cursor: pointer;
 }
 
-@media screen and (max-width: 1600px) {
-  #documents {
-    scroll-margin-block-start: 6rem;
-    padding-bottom: 520px;
-  }
+.document-card > div > a > i {
+  margin-right: 0.5rem;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1285px) {
   #documents {
-    scroll-margin-block-start: 13rem;
-    padding-bottom: 520px;
+    scroll-margin-block-start: 12rem;
+  }
+
+  .accordion {
+    width: 80%;
+    margin-bottom: 20rem;
+  }
+
+  .document-card > div > a > i {
+    margin-right: 0.2rem;
+  }
+
+  .document-card h3 {
+    font-size: 1rem;
   }
 
   .documents > h1 {
@@ -117,10 +114,14 @@
   }
 }
 
-@media screen and (max-width: 1010px) {
+@media (max-width: 1000px) {
   #documents {
-    scroll-margin-block-start: 32rem;
-    padding-bottom: 600px;
+    scroll-margin-block-start: 12rem;
+  }
+
+  .accordion {
+    width: 80%;
+    margin-bottom: 20rem;
   }
 
   .documents > h1 {
@@ -128,58 +129,34 @@
   }
 }
 
-@media screen and (max-width: 797px) {
+@media (max-width: 445px) {
   #documents {
-    scroll-margin-block-start: 40rem;
-    padding-bottom: 700px;
+    scroll-margin-block-start: 28rem;
+  }
+
+  .accordion-title {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .document-cards {
+    flex-wrap: wrap;
+  }
+
+  .document-card {
+    padding: 0.2rem;
+  }
+
+  .document-card > div {
+    padding: 0.6rem;
+  }
+
+  .document-card > div > a {
+    padding: 0.4rem;
+  }
+
+  .accordion {
+    width: 300px;
+    margin-bottom: 75rem;
   }
 }
-
-@media screen and (max-width: 768px) {
-  #documents {
-    scroll-margin-block-start: 37rem;
-    padding-bottom: 700px;
-  }
-}
-
-@media screen and (max-width: 674px) {
-  #documents {
-    scroll-margin-block-start: 40rem;
-    padding-bottom: 700px;
-  }
-}
-
-@media screen and (max-width: 594px) {
-  #documents {
-    scroll-margin-block-start: 80rem;
-    padding-bottom: 1300px;
-  }
-}
-
-@media screen and (max-width: 508px) {
-  #documents {
-    scroll-margin-block-start: 80rem;
-    padding-bottom: 1350px;
-  }
-}
-
-@media screen and (max-width: 490px) {
-  #documents {
-    scroll-margin-block-start: 83rem;
-    padding-bottom: 1350px;
-  }
-}
-
-@media screen and (max-width: 408px) {
-  #documents {
-    scroll-margin-block-start: 85rem;
-    padding-bottom: 1300px;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  #documents {
-    scroll-margin-block-start: 90rem;
-    padding-bottom: 1300px;
-  }
-} */

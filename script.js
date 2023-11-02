@@ -47,3 +47,27 @@ tabs.forEach((tab, index) => {
     allContents[index].classList.add("active");
   });
 });
+
+const accordionItems = document.querySelectorAll(".accordion-item");
+
+accordionItems.forEach((item) => {
+  const title = item.querySelector(".accordion-title");
+  const content = item.querySelector(".accordion-content");
+
+  title.addEventListener("click", () => {
+    accordionItems.forEach((otherItem) => {
+      if (otherItem !== item) {
+        otherItem.classList.remove("active");
+        otherItem.querySelector(".accordion-content").style.maxHeight = "0";
+      }
+    });
+
+    item.classList.toggle("active");
+
+    if (item.classList.contains("active")) {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } else {
+      content.style.maxHeight = "0";
+    }
+  });
+});

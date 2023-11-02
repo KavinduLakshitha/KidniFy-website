@@ -228,6 +228,7 @@ section {
     color: #3d8cbf;
     position: fixed;
     background-color: white;
+    z-index: 1000;
   }
 
   #close-icon {
