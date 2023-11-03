@@ -27,7 +27,6 @@
   max-width: 300px;
   box-shadow: rgba(18, 92, 134, 0.15) 0px 48px 100px 0px;
   text-align: center;
-  z-index: 1000;
 }
 
 .feature-card > h3 {

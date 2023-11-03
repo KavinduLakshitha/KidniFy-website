@@ -20,6 +20,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 a,
 button {
   cursor: revert;
