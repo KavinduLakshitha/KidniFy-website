@@ -263,10 +263,12 @@
     font-size: 0.7rem;
     width: 100%;
     padding: 0.4rem;
+    word-wrap: normal;
+    white-space: nowrap;
   }
 
   .line {
-    top: 28px;
+    top: 19px;
   }
 
   .domain-content .content p {
@@ -290,10 +292,12 @@
     font-size: 0.7rem;
     width: 100%;
     padding: 0.4rem;
+    word-wrap: normal;
+    white-space: nowrap;
   }
 
   .line {
-    top: 32px;
+    top: 19px;
   }
 
   .domain-content .content p {
