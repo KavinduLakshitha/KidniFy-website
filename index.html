@@ -27,6 +27,8 @@
       rel="stylesheet"
     />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -56,7 +58,7 @@
 
     <section id="home">
       <div class="hero-section">
-        <div class="hero-left">
+        <div class="hero-left" data-aos="fade-up">
           <h1>What is KidniFy?</h1>
           <p>
             Discover KidniFy, the ultimate kidney health app. KidniFy combines
@@ -67,14 +69,14 @@
             and enjoy a healthier life with KidniFy.
           </p>
         </div>
-        <div class="hero-right">
+        <div class="hero-right" data-aos="fade-down">
           <img src="./images/landing-page.png" alt="" />
         </div>
       </div>
     </section>
     <section id="domain">
-      <h1>Our domain</h1>
-      <div class="domain-container">
+      <h1 data-aos="fade-right">Our domain</h1>
+      <div class="domain-container" data-aos="fade-left">
         <div class="tab-box">
           <button class="tab-btn active">Background</button
           ><button class="tab-btn">Research Gap</button
@@ -172,7 +174,7 @@
       </div>
     </section>
     <section id="tools">
-      <h1>Tools & Technologies</h1>
+      <h1 data-aos="fade-down">Tools & Technologies</h1>
       <div class="marquee">
         <ul class="marquee-content">
           <li><img src="./images/tools/jupyter.png" alt="" /></li>
@@ -189,7 +191,7 @@
       </div>
     </section>
     <section id="features">
-      <h1>What do we provide ?</h1>
+      <h1 data-aos="fade-right">What do we provide ?</h1>
 
       <div class="feature-cards">
         <div class="feature-card">
@@ -236,7 +238,7 @@
 
     <section id="documents">
       <div class="documents">
-        <h1>Documents</h1>
+        <h1 data-aos="fade-right">Documents</h1>
         <div class="accordion">
           <div class="accordion-item">
             <div class="accordion-title">
@@ -618,7 +620,7 @@
       </div>
     </section>
     <section id="team">
-      <h1>Meet the team</h1>
+      <h1 data-aos="fade-right">Meet the team</h1>
       <div class="team-container">
         <div class="team-supervisors">
           <div class="team-content">
@@ -712,5 +714,9 @@
     </section>
 
     <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 90%;
   margin: 0 auto;
-  scroll-margin-block-start: 2rem;
+  scroll-margin-block-start: 8rem;
   padding-bottom: 3rem;
 }
 
@@ -81,7 +81,7 @@
 
 @media (max-width: 1600px) {
   #team {
-    scroll-margin-block-start: 15rem;
+    /* scroll-margin-block-start: 15rem; */
   }
   .team-container {
     margin-top: 1.5rem;
