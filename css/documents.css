@@ -102,13 +102,6 @@
     font-size: 1rem;
   }
 
-  .accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    margin: 0.5rem 0;
-    transition: max-height 0.3s ease-in-out;
-  }
-
   .accordion-item.active .accordion-content {
     max-height: 1000px;
   }
@@ -208,11 +201,11 @@
   }
 
   .document-card > div {
-    padding: 0.6rem;
+    padding: 0.3rem;
   }
 
   .document-card > div > a {
-    padding: 0.4rem;
+    padding: 0.3rem;
   }
 }
 
@@ -222,7 +215,7 @@
   }
 
   .accordion {
-    width: 50%;
+    width: 80%;
     margin-bottom: 20rem;
   }
 
@@ -231,11 +224,11 @@
   }
 
   .document-card > div {
-    padding: 0.6rem;
+    padding: 0.4rem;
   }
 
   .document-card > div > a {
-    padding: 0.4rem;
+    padding: 0.3rem;
   }
 }
 
@@ -255,15 +248,15 @@
   }
 
   .document-card {
-    padding: 0.2rem;
+    padding: 0.8rem 0;
   }
 
   .document-card > div {
-    padding: 0.6rem;
+    padding: 0.3rem;
   }
 
   .document-card > div > a {
-    padding: 0.4rem;
+    padding: 0.3rem;
   }
 
   .accordion {
