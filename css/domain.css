@@ -181,6 +181,27 @@
   }
 }
 
+@media (max-width: 600px) {
+  .domain-container {
+    width: 90%;
+    height: 500px;
+  }
+
+  .tab-box .tab-btn {
+    font-size: 0.7rem;
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .line {
+    top: 21px;
+  }
+
+  .domain-content .content p {
+    font-size: 0.65rem;
+  }
+}
+
 @media (max-width: 540px) {
   #domain {
     display: flex;
@@ -200,7 +221,7 @@
   }
 
   .line {
-    top: 25px;
+    top: 18px;
   }
 }
 
@@ -223,6 +244,33 @@
 
   .domain-content .content p {
     font-size: 0.75rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 393px) {
+  #domain {
+    scroll-margin-block-start: 2rem;
+  }
+
+  .domain-container {
+    width: 90%;
+    height: auto;
+    height: 600px;
+  }
+
+  .tab-box .tab-btn {
+    font-size: 0.7rem;
+    width: 100%;
+    padding: 0.4rem;
+  }
+
+  .line {
+    top: 28px;
+  }
+
+  .domain-content .content p {
+    font-size: 0.7rem;
     line-height: 1.5;
   }
 }
