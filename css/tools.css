@@ -73,6 +73,7 @@
   box-shadow: rgba(18, 92, 134, 0.15) 0px 30px 30px 0px;
   padding: 1.25rem;
   max-width: 230px;
+  aspect-ratio: 1/1;
 }
 
 .marquee-content li img {
