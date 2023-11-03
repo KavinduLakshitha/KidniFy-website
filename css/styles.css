@@ -270,6 +270,7 @@ section {
 @media (max-width: 380px) {
   nav {
     width: 230px;
+    background-color: red;
   }
 
   .nav-logo {
@@ -283,6 +284,5 @@ section {
   #close-icon {
     left: 90%;
     font-size: 0.95rem;
-    background-color: red;
   }
 }
