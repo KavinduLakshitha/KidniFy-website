@@ -1,5 +1,5 @@
 #documents {
-  scroll-margin-block-start: 4rem;
+  scroll-margin-block-start: 2rem;
 }
 
 .accordion {
@@ -155,17 +155,17 @@
   }
 
   #documents {
-    scroll-margin-block-start: 10rem;
+    scroll-margin-block-start: 0rem;
   }
 
   .accordion {
-    margin-bottom: 32rem;
+    /* margin-bottom: 32rem; */
   }
 }
 
 @media (max-width: 1285px) {
   #documents {
-    scroll-margin-block-start: 12rem;
+    scroll-margin-block-start: 0rem;
   }
 
   .accordion {
@@ -188,7 +188,7 @@
 
 @media (max-width: 1000px) {
   #documents {
-    scroll-margin-block-start: 20rem;
+    scroll-margin-block-start: 0rem;
   }
 
   .accordion {
@@ -211,7 +211,7 @@
 
 @media (max-width: 768px) {
   #documents {
-    scroll-margin-block-start: 5rem;
+    scroll-margin-block-start: 0rem;
   }
 
   .accordion {
@@ -234,8 +234,7 @@
 
 @media (max-width: 445px) {
   #documents {
-    scroll-margin-block-start: 8rem;
-    /* padding-bottom: 10rem; */
+    scroll-margin-block-start: 0rem;
   }
 
   .accordion-title {
@@ -261,13 +260,11 @@
 
   .accordion {
     width: 300px;
-    margin-bottom: 75rem;
   }
 }
 
 @media (max-width: 380px) {
   #documents {
-    scroll-margin-block-start: 8rem;
-    /* padding-bottom: 10rem; */
+    scroll-margin-block-start: 0rem;
   }
 }
