@@ -110,18 +110,6 @@
   }
 }
 
-@media (max-width: 580px) {
-  #features > h1 {
-    /* margin-bottom: 0; */
-  }
-}
-
-@media (max-width: 508px) {
-  #features > h1 {
-    /* margin-bottom: 0; */
-  }
-}
-
 @media (max-width: 445px) {
   #features {
     scroll-margin-block-start: 2rem;

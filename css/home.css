@@ -20,9 +20,10 @@
 
 .hero-left > p {
   font-size: 1.2rem;
-  font-family: "Inter", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #0f0d1f;
   line-height: 1.5;
+  font-weight: 500;
 }
 
 .hero-right {
