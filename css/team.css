@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 90%;
   margin: 0 auto;
-  scroll-margin-block-start: 5rem;
+  scroll-margin-block-start: 8rem;
 }
 
 #team > h1 {

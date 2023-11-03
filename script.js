@@ -1,3 +1,11 @@
+const navLinks = document.querySelectorAll(".nav-link");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    link.focus();
+  });
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   const menuBars = document.getElementById("menu-bars");
   const closeIcon = document.getElementById("close-icon");
@@ -71,3 +79,15 @@ accordionItems.forEach((item) => {
     }
   });
 });
+
+const root = document.documentElement;
+const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue(
+  "--marquee-elements-displayed"
+);
+const marqueeContent = document.querySelector("ul.marquee-content");
+
+root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+for (let i = 0; i < marqueeElementsDisplayed; i++) {
+  marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+}
