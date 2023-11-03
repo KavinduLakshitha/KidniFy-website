@@ -170,7 +170,7 @@
 
   .accordion {
     width: 80%;
-    margin-bottom: 20rem;
+    /* margin-bottom: 20rem; */
   }
 
   .document-card > div > a > i {
@@ -193,7 +193,7 @@
 
   .accordion {
     width: 80%;
-    margin-bottom: 20rem;
+    /* margin-bottom: 20rem; */
   }
 
   .documents > h1 {
@@ -216,7 +216,7 @@
 
   .accordion {
     width: 80%;
-    margin-bottom: 20rem;
+    /* margin-bottom: 20rem; */
   }
 
   .documents > h1 {
@@ -235,7 +235,7 @@
 @media (max-width: 445px) {
   #documents {
     scroll-margin-block-start: 8rem;
-    padding-bottom: 10rem;
+    /* padding-bottom: 10rem; */
   }
 
   .accordion-title {
@@ -268,6 +268,6 @@
 @media (max-width: 380px) {
   #documents {
     scroll-margin-block-start: 8rem;
-    padding-bottom: 10rem;
+    /* padding-bottom: 10rem; */
   }
 }

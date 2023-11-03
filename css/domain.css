@@ -239,7 +239,7 @@
   .domain-container {
     width: 90%;
     height: auto;
-    height: 600px;
+    height: fit-content;
   }
 
   .tab-box .tab-btn {
@@ -268,7 +268,7 @@
   .domain-container {
     width: 90%;
     height: auto;
-    height: 600px;
+    height: fit-content;
   }
 
   .tab-box .tab-btn {
@@ -297,7 +297,7 @@
   .domain-container {
     width: 90%;
     height: auto;
-    height: 600px;
+    height: fit-content;
   }
 
   .tab-box .tab-btn {
