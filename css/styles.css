@@ -283,5 +283,6 @@ section {
   #close-icon {
     left: 90%;
     font-size: 0.95rem;
+    background-color: red;
   }
 }
