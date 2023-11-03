@@ -334,7 +334,18 @@
 
 @media (max-width: 445px) {
   #team {
-    scroll-margin-block-start: 40rem;
+    scroll-margin-block-start: 42rem;
+  }
+
+  .team-photo {
+    width: 200px;
+  }
+}
+
+@media (max-width: 380px) {
+  #team {
+    scroll-margin-block-start: 44rem;
+    padding-top: 6rem;
   }
 
   .team-photo {

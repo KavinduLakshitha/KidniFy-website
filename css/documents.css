@@ -126,7 +126,7 @@
 
 @media (max-width: 1000px) {
   #documents {
-    scroll-margin-block-start: 12rem;
+    scroll-margin-block-start: 20rem;
   }
 
   .accordion {
@@ -137,11 +137,42 @@
   .documents > h1 {
     font-size: 1.8rem;
   }
+
+  .document-card > div {
+    padding: 0.6rem;
+  }
+
+  .document-card > div > a {
+    padding: 0.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #documents {
+    scroll-margin-block-start: 5rem;
+  }
+
+  .accordion {
+    width: 80%;
+    margin-bottom: 20rem;
+  }
+
+  .documents > h1 {
+    font-size: 1.8rem;
+  }
+
+  .document-card > div {
+    padding: 0.6rem;
+  }
+
+  .document-card > div > a {
+    padding: 0.4rem;
+  }
 }
 
 @media (max-width: 445px) {
   #documents {
-    scroll-margin-block-start: 28rem;
+    scroll-margin-block-start: 38rem;
   }
 
   .accordion-title {
@@ -168,5 +199,12 @@
   .accordion {
     width: 300px;
     margin-bottom: 75rem;
+  }
+}
+
+@media (max-width: 380px) {
+  #documents {
+    scroll-margin-block-start: 40rem;
+    padding-bottom: 10rem;
   }
 }
