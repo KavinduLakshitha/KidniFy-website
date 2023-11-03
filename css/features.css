@@ -12,7 +12,7 @@
   display: flex;
   width: 85%;
   margin: 0 auto;
-  gap: 1.25rem;
+  gap: 1.5rem;
   justify-content: center;
   font-family: "Raleway", sans-serif;
 }
@@ -23,10 +23,11 @@
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  justify-content: space-around;
   max-width: 300px;
   box-shadow: rgba(18, 92, 134, 0.15) 0px 48px 100px 0px;
   text-align: center;
+  min-height: 18rem;
 }
 
 .feature-card > h3 {
