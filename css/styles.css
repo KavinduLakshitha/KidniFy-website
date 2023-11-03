@@ -267,7 +267,7 @@ section {
   }
 }
 
-@media (max-width: 388px) {
+@media (max-width: 389px) {
   nav {
     width: 230px;
     background-color: red;
