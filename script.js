@@ -1,10 +1,3 @@
-window.addEventListener("load", function () {
-  // After 2 seconds, hide the loading animation
-  setTimeout(function () {
-    document.getElementById("loading-animation").style.display = "none";
-  }, 1000); // 2 seconds (2000 milliseconds)
-});
-
 const navLinks = document.querySelectorAll(".nav-link");
 
 navLinks.forEach((link) => {
