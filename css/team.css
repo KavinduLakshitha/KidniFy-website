@@ -334,7 +334,8 @@
 
 @media (max-width: 445px) {
   #team {
-    scroll-margin-block-start: 42rem;
+    scroll-margin-block-start: 0rem;
+    padding-top: 2rem;
   }
 
   .team-photo {
@@ -344,8 +345,8 @@
 
 @media (max-width: 380px) {
   #team {
-    scroll-margin-block-start: 44rem;
-    padding-top: 6rem;
+    scroll-margin-block-start: 0rem;
+    padding-top: 2rem;
   }
 
   .team-photo {

@@ -241,7 +241,8 @@
 
 @media (max-width: 445px) {
   #documents {
-    scroll-margin-block-start: 38rem;
+    scroll-margin-block-start: 8rem;
+    padding-bottom: 10rem;
   }
 
   .accordion-title {
@@ -273,7 +274,7 @@
 
 @media (max-width: 380px) {
   #documents {
-    scroll-margin-block-start: 40rem;
+    scroll-margin-block-start: 8rem;
     padding-bottom: 10rem;
   }
 }
