@@ -1,0 +1,129 @@
+#features > h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: #125c86;
+  font-size: 2.5rem;
+  align-self: center;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.feature-cards {
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  gap: 1.25rem;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.feature-card {
+  flex: 1;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 300px;
+  box-shadow: rgba(18, 92, 134, 0.15) 0px 48px 100px 0px;
+  text-align: center;
+}
+
+.feature-card > h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #125c86;
+}
+
+#feature-icon {
+  color: #127fae;
+  font-size: 2.5rem;
+}
+
+.feature-card > p {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #127fae;
+}
+
+@media (max-width: 1600px) {
+  #features > h1 {
+    font-size: 2rem;
+    align-self: center;
+  }
+}
+
+@media (max-width: 1400px) {
+  #features {
+    scroll-margin-block-start: 10rem;
+  }
+  .feature-cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 0 auto;
+    gap: 1rem;
+    flex-basis: 50%;
+    justify-content: center;
+    padding-bottom: 12rem;
+  }
+
+  .feature-card {
+    flex: auto;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 1243px) {
+  #features {
+    scroll-margin-block-start: 7rem;
+  }
+  .feature-cards {
+    padding-bottom: 8rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  #features > h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 674px) {
+  .feature-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+    gap: 1rem;
+    align-items: center;
+  }
+}
+
+@media (max-width: 580px) {
+  #features > h1 {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 508px) {
+  #features > h1 {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 445px) {
+}
+
+@media (max-width: 380px) {
+}
