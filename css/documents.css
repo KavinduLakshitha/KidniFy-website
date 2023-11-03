@@ -157,10 +157,6 @@
   #documents {
     scroll-margin-block-start: 0rem;
   }
-
-  .accordion {
-    /* margin-bottom: 32rem; */
-  }
 }
 
 @media (max-width: 1285px) {
