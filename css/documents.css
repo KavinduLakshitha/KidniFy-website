@@ -1,5 +1,5 @@
 #documents {
-  scroll-margin-block-start: 2rem;
+  scroll-margin-block-start: 15vh;
 }
 
 .accordion {
@@ -166,7 +166,6 @@
 
   .accordion {
     width: 80%;
-    /* margin-bottom: 20rem; */
   }
 
   .document-card > div > a > i {
