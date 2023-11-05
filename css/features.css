@@ -77,6 +77,12 @@
   }
 }
 
+@media (max-width: 1250px) {
+  #features {
+    padding-bottom: 2rem;
+  }
+}
+
 @media (max-width: 1000px) {
   #features > h1 {
     font-size: 1.8rem;
@@ -84,7 +90,7 @@
 }
 
 @media (max-width: 768px) {
-  #documents {
+  #features {
     scroll-margin-block-start: 0rem;
   }
 }
@@ -103,6 +109,6 @@
 
 @media (max-width: 445px) {
   #features {
-    scroll-margin-block-start: 2rem;
+    scroll-margin-block-start: 0;
   }
 }

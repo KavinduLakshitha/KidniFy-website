@@ -77,6 +77,18 @@
   transition: all 0.3s ease-in-out;
 }
 
+@media (max-width: 1600px) {
+  #slides > h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  #slides > h1 {
+    font-size: 1.8rem;
+  }
+}
+
 @media (max-width: 768px) {
   #slides {
     scroll-margin-block-start: 0;
