@@ -41,6 +41,14 @@
   max-width: 300px;
 }
 
+.domain-technologies > img {
+  max-width: 50px;
+  background-color: white;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(18, 92, 134, 0.2) 0px 7px 29px 0px;
+}
+
 .domain-card:hover {
   transform: translateY(-5px);
 }

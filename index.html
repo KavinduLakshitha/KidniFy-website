@@ -56,7 +56,7 @@
       </div>
       <div class="search">
         <i class="fa-solid fa-search" id="search-icon"></i>
-        <input type="search" placeholder="Search..." />
+        <input type="search" id="search-input" placeholder="Search..." />
       </div>
       <i class="fa-solid fa-xmark" id="close-icon"></i>
     </nav>
@@ -206,18 +206,17 @@
 
         <div class="domain-card">
           <h3>Technologies</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            molestiae ex, rerum alias beatae maiores harum ullam velit. Incidunt
-            autem hic alias illum nostrum rem! Hic enim architecto quod
-            mollitia. Facilis id culpa unde illo, doloribus sit recusandae nisi
-            iusto? Nesciunt nam autem facilis mollitia, ducimus inventore dolore
-            consequuntur similique voluptatum, atque, sapiente corporis
-            pariatur. Expedita est doloribus amet fuga. Qui ut corrupti impedit
-            sunt dolorem odio, quo dolorum iure dolores excepturi ratione ab,
-            blanditiis placeat aut totam velit reiciendis aliquam ex nesciunt!
-            Voluptates atque, deleniti magni itaque quidem sint.
-          </p>
+          <div class="domain-technologies">
+            <img src="./images/tools/python.png" alt="" />
+            <img src="./images/tools/tensorflow.png" alt="" />
+            <img src="./images/tools/keras.png" alt="" />
+            <img src="./images/tools/firebase.png" alt="" />
+            <img src="./images/tools/flask.png" alt="" />
+            <img src="./images/tools/jupyter.png" alt="" />
+            <img src="./images/tools/react-native.png" alt="" />
+            <img src="./images/tools/colab.png" alt="" />
+            <img src="./images/tools/vscode.png" alt="" />
+          </div>
         </div>
       </div>
     </section>
@@ -623,15 +622,16 @@
 
       <div class="contact-us">
         <div class="contact-form">
-          <form action="">
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
+          <form action="" id="contact-form">
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="Email" required />
             <textarea
               name=""
               id=""
               cols="30"
               rows="10"
               placeholder="Message"
+              required
             ></textarea>
 
             <button type="submit" class="submit-btn">

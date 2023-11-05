@@ -106,3 +106,41 @@ cardHeaders.forEach((cardHeader) => {
     }
   });
 });
+
+function performSearch() {
+  const searchTerm = document
+    .getElementById("search-input")
+    .value.toLowerCase();
+
+  const elementsToSearch = document.querySelectorAll(".searchable-element");
+
+  elementsToSearch.forEach((element) => {
+    const text = element.textContent.toLowerCase();
+    if (text.includes(searchTerm)) {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  });
+}
+
+document
+  .getElementById("search-input")
+  .addEventListener("input", performSearch);
+
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+      alert("Please fill in all the required fields.");
+    } else {
+      alert("Form submitted successfully!");
+
+      document.getElementById("contact-form").reset();
+    }
+  });
