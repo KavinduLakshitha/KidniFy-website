@@ -1,0 +1,91 @@
+#contact {
+}
+
+#contact > h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: #125c86;
+  font-size: 2.5rem;
+  align-self: center;
+  margin-bottom: 2rem;
+}
+
+.contact-us {
+  display: flex;
+  background-color: white;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 5px 5px 20px 0 #125c8680;
+}
+
+.contact-form > form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form > form > input,
+.contact-form > form > textarea {
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  background-color: #f4f5fb;
+}
+
+.contact-right > img {
+  max-width: 300px;
+}
+
+.contact-form > form > input::placeholder,
+.contact-form > form > textarea::placeholder {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.submit-btn {
+  display: flex;
+  gap: 0.2rem;
+  align-self: flex-end;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  background-color: #287fb1;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+}
+
+.submit-btn:hover {
+  background-color: #0e4565;
+}
+
+@media (max-width: 1285px) {
+  #contact > h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  #contact > h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: white;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 5px 5px 20px 0 #125c8680;
+  }
+
+  .contact-right > img {
+    max-width: 260px;
+  }
+}

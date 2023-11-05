@@ -1,0 +1,101 @@
+#slides {
+  justify-content: flex-start;
+  scroll-margin-block-start: 15vh;
+}
+
+#slides > h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: #125c86;
+  font-size: 2.5rem;
+  align-self: center;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.slides-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.slide-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  flex: 1;
+  border: #75c6ef 1px solid;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: #125c86;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 200px;
+  max-width: 250px;
+  box-shadow: rgba(18, 92, 134, 0.2) 0px 7px 29px 0px;
+}
+
+.slide-card > h3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-card > h3 > span {
+  word-wrap: normal;
+  white-space: nowrap;
+}
+
+.slide-card > div {
+  padding: 0.5rem;
+  border: #125c86 1px solid;
+  border-radius: 0.5rem;
+}
+
+#powerpoint {
+  font-size: 3rem;
+}
+
+#download {
+  margin-right: 0.5rem;
+}
+
+.slide-card > div:hover {
+  background-color: #87bcdf;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 1600px) {
+  #slides > h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  #slides > h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #slides {
+    scroll-margin-block-start: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .slides-cards {
+    flex-direction: column;
+  }
+}

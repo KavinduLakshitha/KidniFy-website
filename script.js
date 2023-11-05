@@ -91,3 +91,56 @@ root.style.setProperty("--marquee-elements", marqueeContent.children.length);
 for (let i = 0; i < marqueeElementsDisplayed; i++) {
   marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
 }
+
+// Get all the card headers
+const cardHeaders = document.querySelectorAll(".card-header");
+
+// Add a click event listener to each card header
+cardHeaders.forEach((cardHeader) => {
+  cardHeader.addEventListener("click", () => {
+    const content = cardHeader.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+});
+
+function performSearch() {
+  const searchTerm = document
+    .getElementById("search-input")
+    .value.toLowerCase();
+
+  const elementsToSearch = document.querySelectorAll(".searchable-element");
+
+  elementsToSearch.forEach((element) => {
+    const text = element.textContent.toLowerCase();
+    if (text.includes(searchTerm)) {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  });
+}
+
+document
+  .getElementById("search-input")
+  .addEventListener("input", performSearch);
+
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+      alert("Please fill in all the required fields.");
+    } else {
+      alert("Form submitted successfully!");
+
+      document.getElementById("contact-form").reset();
+    }
+  });

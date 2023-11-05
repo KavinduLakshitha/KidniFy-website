@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="./css/tools.css" />
     <link rel="stylesheet" href="./css/team.css" />
     <link rel="stylesheet" href="./css/documents.css" />
+    <link rel="stylesheet" href="./css/slides.css" />
     <link rel="stylesheet" href="./css/features.css" />
+    <link rel="stylesheet" href="./css/milestones.css" />
+    <link rel="stylesheet" href="./css/contactform.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,15 +43,20 @@
   </head>
   <body>
     <nav>
-      <a class="nav-link-logo" href="#home">
+      <a class="nav-link-logo active" href="#home">
         <img class="nav-logo" src="./images/KidniFyLogo.png" alt="" />
       </a>
       <div class="nav-links">
         <a class="nav-link" href="#domain">Domain</a>
-        <a class="nav-link" href="#tools">Tools & technologies</a>
-        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#milestones">Milestones</a>
         <a class="nav-link" href="#documents">Documents</a>
-        <a class="nav-link" href="#team">Team</a>
+        <a class="nav-link" href="#slides">Slides</a>
+        <a class="nav-link" href="#team">About us</a>
+        <a class="nav-link" href="#contact">Contact us</a>
+      </div>
+      <div class="search">
+        <i class="fa-solid fa-search" id="search-icon"></i>
+        <input type="search" id="search-input" placeholder="Search..." />
       </div>
       <i class="fa-solid fa-xmark" id="close-icon"></i>
     </nav>
@@ -74,121 +82,7 @@
         </div>
       </div>
     </section>
-    <section id="domain">
-      <h1 data-aos="fade-right">Our domain</h1>
-      <div class="domain-container" data-aos="fade-left">
-        <div class="tab-box">
-          <button class="tab-btn active">Background</button
-          ><button class="tab-btn">Research Gap</button
-          ><button class="tab-btn">Research Problem</button
-          ><button class="tab-btn">Goals</button>
-          <div class="line"></div>
-        </div>
 
-        <div class="domain-content">
-          <div class="content active">
-            <p>
-              Introducing a groundbreaking initiative in Sri Lanka to combat
-              Chronic Kidney Disease (CKD) with the power of technology. We are
-              developing a user-friendly smartphone application that employs
-              cutting-edge Machine Learning (ML) algorithms for accurate CKD
-              prediction. With 16% of the population affected, early detection
-              is vital, and this app aims to be a game-changer. Patients can
-              estimate their CKD risk, while healthcare professionals can
-              utilize it for early detection and personalized treatment plans.
-              By integrating patient-specific data and advanced ML algorithms,
-              we're boosting prediction accuracy and transforming CKD
-              management. But our impact doesn't stop there. CKD in Sri Lanka is
-              influenced by various factors, including water contamination.
-              We're also pioneering IoT and ML technologies to continuously
-              monitor water quality, providing real-time alerts to kidney
-              patients. This innovation ensures safer water, proactive measures,
-              and empowers rural areas. Together, these innovations promise to
-              revolutionize CKD prediction, management, and water quality
-              monitoring, contributing to a healthier Sri Lankan population.
-            </p>
-          </div>
-          <div class="content">
-            <p>
-              This research project addressed crucial gaps in the prediction and
-              management of Chronic Kidney Disease (CKD) in Sri Lanka. It
-              identified limitations in existing machine learning applications
-              for CKD prediction, with a focus on improving accuracy,
-              accessibility, and localization. The study also advocated for the
-              use of advanced technology in medical imaging, such as
-              Convolutional Neural Networks (CNNs) and multimodal image fusion,
-              to enhance CKD diagnosis and monitoring. Additionally, the
-              research introduced a novel approach to CKD dietary management
-              using a Random Forest Regressor model, considering multiple
-              dietary attributes for personalized diet plans. Furthermore, the
-              study identified significant research gaps in water quality
-              monitoring systems, emphasizing the need for specialized solutions
-              tailored to CKD patients. Integrating IoT and machine learning
-              into water quality monitoring was explored to enhance accuracy and
-              efficiency, along with improving data accessibility and timely
-              detection of water quality issues.
-            </p>
-          </div>
-          <div class="content">
-            <p>
-              In Sri Lanka, Chronic Kidney Disease (CKD) is a prevalent health
-              concern, affecting roughly 17.7% of the population. Early
-              detection and intervention are essential, but significant
-              challenges persist. Limited access to diagnostic tools,
-              particularly in rural areas, results in delayed diagnoses and
-              healthcare disparities. To address these issues, the research
-              explored the potential of machine learning (ML) models for CKD
-              prediction within the unique Sri Lankan context. It investigated
-              various factors influencing model performance, aiming to develop
-              more effective predictive tools. The study also assessed public
-              awareness of CKD risks and symptoms to enhance early detection and
-              treatment. It identified barriers to accessing diagnostic tools
-              and proposed strategies for broader access and improved CKD
-              management. Additionally, the research acknowledged the complexity
-              of kidney disease diagnosis, leading to the development of a
-              mobile app providing personalized dietary advice to CKD patients,
-              facilitating adherence to dietary restrictions. Another critical
-              aspect of the research was the absence of a reliable real-time
-              water quality monitoring system in Sri Lanka, which particularly
-              affects kidney patients.
-            </p>
-          </div>
-          <div class="content">
-            <p>
-              The objectives of this initiative include developing a robust and
-              effective mobile application to predict a user's kidney health
-              condition, selecting and optimizing an image classification model
-              for accurate CKD stage prediction from CT scans, creating a
-              patient-specific care recommendation system, devising a
-              personalized diet plan for CKD patients based on medical history
-              and real-time health indicators, and implementing an Internet of
-              Things and Machine Learning-based water quality monitoring system
-              tailored to kidney patients' needs. The central aim is to enhance
-              the well-being of kidney patients by minimizing the risks
-              associated with compromised water sources. This comprehensive
-              approach promises to set new standards for data-driven healthcare
-              and improve patient care in the region.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="tools">
-      <h1 data-aos="fade-right">Tools & Technologies</h1>
-      <div class="marquee">
-        <ul class="marquee-content">
-          <li><img src="./images/tools/jupyter.png" alt="" /></li>
-          <li><img src="./images/tools/colab.png" alt="" /></li>
-          <li><img src="./images/tools/vscode.png" alt="" /></li>
-          <li><img src="./images/tools/python.png" alt="" /></li>
-          <li><img src="./images/tools/flask.png" alt="" /></li>
-          <li><img src="./images/tools/firebase.png" alt="" /></li>
-          <li><img src="./images/tools/react-native.png" alt="" /></li>
-          <li><img src="./images/tools/tensorflow.png" alt="" /></li>
-          <li><img src="./images/tools/keras.png" alt="" /></li>
-        </ul>
-      </div>
-    </section>
     <section id="features">
       <h1 data-aos="fade-right">What do we provide ?</h1>
 
@@ -234,6 +128,140 @@
         </div>
       </div>
     </section>
+    <section id="domain">
+      <h1 data-aos="fade-right">Our domain</h1>
+
+      <div class="domain-cards">
+        <div class="domain-card">
+          <h3>Literature Survey</h3>
+          <p>
+            The literature survey highlights studies applying machine learning
+            for early CKD diagnosis, developing smartphone-based devices for CKD
+            patient self-testing, systems for water quality monitoring and
+            prediction, and platforms providing CKD stage assessment and diet
+            recommendations. Key techniques include machine learning
+            classifiers, mobile health devices with image analysis, IoT sensors
+            with crowdsourcing, and algorithms to categorize CKD severity. The
+            survey demonstrates growing interest in technology-driven solutions
+            for CKD screening, diagnosis, monitoring and management.
+          </p>
+        </div>
+
+        <div class="domain-card">
+          <h3>Research Gap</h3>
+          <p>
+            The research gap focuses on improving accuracy, accessibility and
+            localization of CKD prediction tools, adopting newer techniques like
+            CNNs for medical imaging, enhancing CKD dietary management through
+            holistic multimodal strategies, developing specialized water quality
+            monitoring systems tailored for CKD patients' health needs, and
+            integrating advanced IoT and ML techniques. Key gaps include
+            accountable and explainable AI, community engagement for water
+            quality, balancing innovation with affordability and strengthening
+            interdisciplinary collaboration. Bridging these gaps requires
+            comprehensive strategies aligned with public health objectives in
+            the distinct Sri Lankan context.
+          </p>
+        </div>
+
+        <div class="domain-card">
+          <h3>Research Problem</h3>
+          <p>
+            The main objective is developing a mobile application to transform
+            CKD care and prevention in Sri Lanka. Sub-objectives include
+            predicting CKD risk through ML models, classifying CKD stage from
+            medical images via deep learning, generating personalized diet plans
+            with ML algorithms, and implementing an IoT and ML solution for
+            real-time water quality monitoring. The goals focus on improving
+            patient outcomes, alleviating healthcare burden, and pioneering
+            data-driven healthcare.
+          </p>
+        </div>
+
+        <div class="domain-card">
+          <h3>Research Objectives</h3>
+          <p>
+            Core problems involve limited access to accurate CKD diagnostic
+            tools, lack of localized ML applications capturing Sri Lanka's
+            context, low public awareness impeding early detection, inadequate
+            medical imaging techniques missing disease progression, absence of
+            tailored dietary protocols and lack of real-time water contamination
+            monitoring systems - jeopardizing CKD patients dependent on safe
+            water.
+          </p>
+        </div>
+
+        <div class="domain-card">
+          <h3>Methodology</h3>
+          <p>
+            The methodology utilizes ML algorithms to predict CKD risk and stage
+            from clinical data, CNN models for CT scan analysis, ML regression
+            for dietary recommendations and an IoT system with ML for water
+            quality monitoring. Techniques include data collection,
+            preprocessing, model optimization, system integration and rigorous
+            testing. User-centric design focuses on intuitive interfaces and
+            accessibility. Cloud platforms enable effective deployment.
+          </p>
+        </div>
+
+        <div class="domain-card">
+          <h3>Technologies</h3>
+          <div class="domain-technologies">
+            <img src="./images/tools/python.png" alt="" />
+            <img src="./images/tools/tensorflow.png" alt="" />
+            <img src="./images/tools/keras.png" alt="" />
+            <img src="./images/tools/firebase.png" alt="" />
+            <img src="./images/tools/flask.png" alt="" />
+            <img src="./images/tools/jupyter.png" alt="" />
+            <img src="./images/tools/react-native.png" alt="" />
+            <img src="./images/tools/colab.png" alt="" />
+            <img src="./images/tools/vscode.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="milestones">
+      <h1 data-aos="fade-right">Milestones</h1>
+      <ul>
+        <li style="--accent-color: #41516c">
+          <div class="date">April 3rd 2023</div>
+          <div class="title">Project Proposal</div>
+          <div class="descr">
+            Presented to a panel of judges in order to provide an overview of
+            the proposed research.
+            <p style="font-weight: 600">Marks allocated - 5%</p>
+          </div>
+        </li>
+        <li style="--accent-color: #fbca3e">
+          <div class="date">25th May 2023</div>
+          <div class="title">Progress Presentation - 1</div>
+          <div class="descr">
+            Evaluation of 50% completion of the proposed solution by a panel of
+            judges.
+            <p style="font-weight: 600">Marks allocated - 10%</p>
+          </div>
+        </li>
+        <li style="--accent-color: #e24a68">
+          <div class="date">07th Sept 2023</div>
+          <div class="title">Progress Presentation - 2</div>
+          <div class="descr">
+            Evaluation of 90% completion of the proposed solution by a panel of
+            judges.
+            <p style="font-weight: 600">Marks allocated - 18%</p>
+          </div>
+        </li>
+
+        <li style="--accent-color: #4cadad">
+          <div class="date">30th October 2023</div>
+          <div class="title">Final Assessment & Viva</div>
+          <div class="descr">
+            Final evaluation of the completed product.
+            <p style="font-weight: 600">Marks allocated - 25%</p>
+          </div>
+        </li>
+      </ul>
+    </section>
 
     <section id="documents">
       <div class="documents">
@@ -241,7 +269,7 @@
         <div class="accordion">
           <div class="accordion-item">
             <div class="accordion-title">
-              <span>Project Proposal</span>
+              <span>Project Charter</span>
             </div>
             <div class="accordion-content">
               <div class="document-cards">
@@ -255,85 +283,22 @@
                     >
                   </div>
                 </div>
-                <div class="document-card">
-                  <h3>IT20785192</h3>
-                  <div>
-                    <a
-                      target="_blank"
-                      href="./documents/Project Proposal/IT20785192.pdf"
-                      ><i class="fa-solid fa-cloud-arrow-down"></i>Download</a
-                    >
-                  </div>
-                </div>
-
-                <div class="document-card">
-                  <h3>IT20226596</h3>
-                  <div>
-                    <a
-                      target="_blank"
-                      href="./documents/Project Proposal/IT20226596.pdf"
-                      ><i class="fa-solid fa-cloud-arrow-down"></i>Download</a
-                    >
-                  </div>
-                </div>
-
-                <div class="document-card">
-                  <h3>IT20235260</h3>
-                  <div>
-                    <a
-                      target="_blank"
-                      href="./documents/Project Proposal/IT20235260.pdf"
-                      ><i class="fa-solid fa-cloud-arrow-down"></i>Download</a
-                    >
-                  </div>
-                </div>
               </div>
             </div>
           </div>
+
           <div class="accordion-item">
             <div class="accordion-title">
-              <span>Progress Presentation</span>
+              <span>Proposal Document</span>
             </div>
             <div class="accordion-content">
               <div class="document-cards">
                 <div class="document-card">
-                  <h3>Proposal Presentation</h3>
+                  <h3>IT20154226</h3>
                   <div>
                     <a
                       target="_blank"
-                      href="./documents/Progress Presentation/proposal.pdf"
-                      ><i class="fa-solid fa-cloud-arrow-down"></i>Download</a
-                    >
-                  </div>
-                </div>
-                <div class="document-card">
-                  <h3>Progress Presentation 1</h3>
-                  <div>
-                    <a
-                      target="_blank"
-                      href="./documents/Progress Presentation/pp1.pdf"
-                      ><i class="fa-solid fa-cloud-arrow-down"></i>Download</a
-                    >
-                  </div>
-                </div>
-
-                <div class="document-card">
-                  <h3>Progress Presentation 2</h3>
-                  <div>
-                    <a
-                      target="_blank"
-                      href="./documents/Progress Presentation/pp2.pdf"
-                      ><i class="fa-solid fa-cloud-arrow-down"></i>Download</a
-                    >
-                  </div>
-                </div>
-
-                <div class="document-card">
-                  <h3>Final Presentation</h3>
-                  <div>
-                    <a
-                      target="_blank"
-                      href="./documents/Progress Presentation/final.pdf"
+                      href="./documents/Project Proposal/IT20154226.pdf"
                       ><i class="fa-solid fa-cloud-arrow-down"></i>Download</a
                     >
                   </div>
@@ -341,6 +306,7 @@
               </div>
             </div>
           </div>
+
           <div class="accordion-item">
             <div class="accordion-title">
               <span>Status Document - 1</span>
@@ -443,119 +409,6 @@
 
           <div class="accordion-item">
             <div class="accordion-title">
-              <span>Log books</span>
-            </div>
-            <div class="accordion-content">
-              <div class="document-cards">
-                <div class="document-card">
-                  <h3>IT20154226</h3>
-                  <div>
-                    <a
-                      target="_blank"
-                      href="./documents/Log books/IT20154226.pdf"
-                      ><i class="fa-solid fa-cloud-arrow-down"></i>Download</a
-                    >
-                  </div>
-                </div>
-                <div class="document-card">
-                  <h3>IT20785192</h3>
-                  <div>
-                    <a
-                      target="_blank"
-                      href="./documents/Log books/IT20785192.pdf"
-                      ><i class="fa-solid fa-cloud-arrow-down"></i>Download</a
-                    >
-                  </div>
-                </div>
-
-                <div class="document-card">
-                  <h3>IT20226596</h3>
-                  <div>
-                    <a
-                      target="_blank"
-                      href="./documents/Log books/IT20226596.pdf"
-                      ><i class="fa-solid fa-cloud-arrow-down"></i>Download</a
-                    >
-                  </div>
-                </div>
-
-                <div class="document-card">
-                  <h3>IT20235260</h3>
-                  <div>
-                    <a
-                      target="_blank"
-                      href="./documents/Log books/IT20235260.pdf"
-                      ><i class="fa-solid fa-cloud-arrow-down"></i>Download</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <div class="accordion-title">
-              <span>Research Papers</span>
-            </div>
-            <div class="accordion-content">
-              <div class="document-cards">
-                <div class="document-card">
-                  <h3>Group 032</h3>
-                  <div>
-                    <a
-                      target="_blank"
-                      href="./documents/Research Papers/Group 2023-032.pdf"
-                      ><i class="fa-solid fa-cloud-arrow-down"></i>Download</a
-                    >
-                  </div>
-                </div>
-                <div class="document-card">
-                  <h3>IT20154226</h3>
-                  <div>
-                    <a
-                      target="_blank"
-                      href="./documents/Research Papers/Marasinghe M.M.K.L.pdf"
-                      ><i class="fa-solid fa-cloud-arrow-down"></i>Download</a
-                    >
-                  </div>
-                </div>
-                <div class="document-card">
-                  <h3>IT20785192</h3>
-                  <div>
-                    <a
-                      target="_blank"
-                      href="./documents/Research Papers/Isurika W.B.pdf"
-                      ><i class="fa-solid fa-cloud-arrow-down"></i>Download</a
-                    >
-                  </div>
-                </div>
-
-                <div class="document-card">
-                  <h3>IT20226596</h3>
-                  <div>
-                    <a
-                      target="_blank"
-                      href="./documents/Research Papers/Perera J.P.M.L.pdf"
-                      ><i class="fa-solid fa-cloud-arrow-down"></i>Download</a
-                    >
-                  </div>
-                </div>
-
-                <div class="document-card">
-                  <h3>IT20235260</h3>
-                  <div>
-                    <a
-                      target="_blank"
-                      href="./documents/Research Papers/Samarawila D.R.N.pdf"
-                      ><i class="fa-solid fa-cloud-arrow-down"></i>Download</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <div class="accordion-title">
               <span>Final Reports</span>
             </div>
             <div class="accordion-content">
@@ -618,6 +471,58 @@
         </div>
       </div>
     </section>
+
+    <section id="slides">
+      <h1 data-aos="fade-right">Slides</h1>
+      <div class="slides-cards">
+        <div class="slide-card">
+          <h3>Proposal <span>Presentation</span></h3>
+
+          <i class="fa-regular fa-file-powerpoint" id="powerpoint"></i>
+          <div>
+            <a
+              target="_blank"
+              href="./documents/Progress Presentation/proposal.pdf"
+              ><i class="fa-solid fa-cloud-arrow-down" id="download"></i
+              >Download</a
+            >
+          </div>
+        </div>
+        <div class="slide-card">
+          <h3>Progress <span>Presentation -1</span></h3>
+          <i class="fa-regular fa-file-powerpoint" id="powerpoint"></i>
+          <div>
+            <a target="_blank" href="./documents/Progress Presentation/pp1.pdf"
+              ><i class="fa-solid fa-cloud-arrow-down" id="download"></i
+              >Download</a
+            >
+          </div>
+        </div>
+        <div class="slide-card">
+          <h3>Progress <span>Presentation -2</span></h3>
+          <i class="fa-regular fa-file-powerpoint" id="powerpoint"></i>
+          <div>
+            <a target="_blank" href="./documents/Progress Presentation/pp2.pdf"
+              ><i class="fa-solid fa-cloud-arrow-down" id="download"></i
+              >Download</a
+            >
+          </div>
+        </div>
+        <div class="slide-card">
+          <h3>Final <span>Presentation</span></h3>
+          <i class="fa-regular fa-file-powerpoint" id="powerpoint"></i>
+          <div>
+            <a
+              target="_blank"
+              href="./documents/Progress Presentation/final.pdf"
+              ><i class="fa-solid fa-cloud-arrow-down" id="download"></i
+              >Download</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="team">
       <h1 data-aos="fade-right">Meet the team</h1>
       <div class="team-container">
@@ -708,6 +613,35 @@
               ></a>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1 data-aos="fade-right">Contact us</h1>
+
+      <div class="contact-us">
+        <div class="contact-form">
+          <form action="" id="contact-form">
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="Email" required />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Message"
+              required
+            ></textarea>
+
+            <button type="submit" class="submit-btn">
+              <i class="fa-solid fa-paper-plane"></i><span>Send</span>
+            </button>
+          </form>
+        </div>
+
+        <div class="contact-right">
+          <img src="./images/contact-us.png" alt="" />
         </div>
       </div>
     </section>

@@ -3,8 +3,7 @@
   flex-direction: column;
   width: 90%;
   margin: 0 auto;
-  scroll-margin-block-start: 8rem;
-  padding-bottom: 3rem;
+  scroll-margin-block-start: 15vh;
 }
 
 #team > h1 {
@@ -34,6 +33,7 @@
 }
 
 .team-content {
+  border-radius: 0.5rem;
   background-color: white;
   padding: 0.75rem;
   box-shadow: rgba(18, 92, 134, 0.2) 0px 7px 29px 0px;
@@ -42,6 +42,7 @@
 .team-photo {
   object-fit: contain;
   width: 250px;
+  border-radius: 0.5rem;
 }
 
 .team-name {
@@ -80,9 +81,6 @@
 }
 
 @media (max-width: 1600px) {
-  #team {
-    /* scroll-margin-block-start: 15rem; */
-  }
   .team-container {
     margin-top: 1.5rem;
   }
@@ -110,9 +108,6 @@
 }
 
 @media (max-width: 1400px) {
-  #team {
-    scroll-margin-block-start: 10rem;
-  }
   .team-container {
     margin-top: 1.5rem;
   }
@@ -140,9 +135,6 @@
 }
 
 @media (max-width: 1200px) {
-  #team {
-    scroll-margin-block-start: 23rem;
-  }
   .team-container {
     margin-top: 1.5rem;
   }
@@ -170,9 +162,6 @@
 }
 
 @media (max-width: 1000px) {
-  #team {
-    scroll-margin-block-start: 19rem;
-  }
   .team-container {
     margin-top: 1.5rem;
   }
@@ -200,12 +189,12 @@
 
 @media (max-width: 768px) {
   #team {
-    scroll-margin-block-start: 6.5rem;
+    scroll-margin-block-start: 0;
   }
 
   .team-container {
     gap: 0.6rem;
-    margin-top: 1.5rem;
+    margin-top: 0;
   }
 
   .team-supervisors,
@@ -240,13 +229,9 @@
 }
 
 @media (max-width: 674px) {
-  #team {
-    scroll-margin-block-start: 4rem;
-  }
-
   .team-content {
     padding: 0.5rem;
-    margin-top: 1.2rem;
+    margin-top: 0;
   }
 
   .team-photo {
@@ -267,12 +252,8 @@
 }
 
 @media (max-width: 580px) {
-  #team {
-    scroll-margin-block-start: 2rem;
-  }
-
   #team > h1 {
-    margin-bottom: 0;
+    margin-bottom: 1.5rem;
   }
 
   .team-content {
@@ -297,10 +278,6 @@
 }
 
 @media (max-width: 508px) {
-  #team {
-    scroll-margin-block-start: 6rem;
-  }
-
   .team-container {
     flex-direction: column;
     flex-wrap: wrap;
@@ -309,7 +286,7 @@
   }
 
   #team > h1 {
-    margin-bottom: 0;
+    margin-bottom: 1.5rem;
   }
 
   .team-content {
@@ -334,22 +311,6 @@
 }
 
 @media (max-width: 445px) {
-  #team {
-    scroll-margin-block-start: 0rem;
-    padding-top: 2rem;
-  }
-
-  .team-photo {
-    width: 200px;
-  }
-}
-
-@media (max-width: 380px) {
-  #team {
-    scroll-margin-block-start: 0rem;
-    padding-top: 2rem;
-  }
-
   .team-photo {
     width: 200px;
   }
