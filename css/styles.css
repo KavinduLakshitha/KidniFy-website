@@ -315,6 +315,10 @@ section {
     position: relative;
   }
 
+  .search > input {
+    width: 100%;
+  }
+
   #search-icon {
     position: absolute;
     z-index: 100;
@@ -326,9 +330,14 @@ section {
     margin-bottom: 1rem;
   }
 
+  #search-icon {
+    margin-left: 1rem;
+  }
+
   .nav-links {
     display: flex;
     flex-direction: column;
+    flex: none;
   }
 
   .nav-link {
